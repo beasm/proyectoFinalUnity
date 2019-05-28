@@ -14,7 +14,7 @@ public class LuzController : MonoBehaviour
 
     IEnumerator EncenderApagaLuz()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         luz.GetComponent<Light>().enabled = !luz.GetComponent<Light>().isActiveAndEnabled;
     }
 

@@ -641,7 +641,7 @@ Prefab:
     - target: {fileID: 224094071897127622, guid: 08073e8641177ed45a2a885d698ff3c0,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -17
+      value: -27.9
       objectReference: {fileID: 0}
     - target: {fileID: 224094071897127622, guid: 08073e8641177ed45a2a885d698ff3c0,
         type: 2}
@@ -692,26 +692,51 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 265179668}
     - target: {fileID: 114964325876362886, guid: 08073e8641177ed45a2a885d698ff3c0,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 265179668}
     - target: {fileID: 114218010635219772, guid: 08073e8641177ed45a2a885d698ff3c0,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 265179668}
     - target: {fileID: 114666601766689082, guid: 08073e8641177ed45a2a885d698ff3c0,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 265179668}
     - target: {fileID: 114993042341424944, guid: 08073e8641177ed45a2a885d698ff3c0,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 265179668}
+    - target: {fileID: 114218010635219772, guid: 08073e8641177ed45a2a885d698ff3c0,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PasoIzquierda
+      objectReference: {fileID: 0}
+    - target: {fileID: 114002047825790880, guid: 08073e8641177ed45a2a885d698ff3c0,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayMovimientos
+      objectReference: {fileID: 0}
+    - target: {fileID: 114666601766689082, guid: 08073e8641177ed45a2a885d698ff3c0,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PasoDerecha
+      objectReference: {fileID: 0}
+    - target: {fileID: 114964325876362886, guid: 08073e8641177ed45a2a885d698ff3c0,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PasoArriba
+      objectReference: {fileID: 0}
+    - target: {fileID: 114993042341424944, guid: 08073e8641177ed45a2a885d698ff3c0,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PasoAbajo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 08073e8641177ed45a2a885d698ff3c0, type: 2}
