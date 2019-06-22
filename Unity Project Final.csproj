@@ -243,6 +243,7 @@
     <Compile Include="Assets\script\CanvasControllerInicio.cs" />
     <Compile Include="Assets\script\CanvasNivelesController.cs" />
     <Compile Include="Assets\script\CanvasNivelesOscurosController.cs" />
+    <Compile Include="Assets\script\CanvasNivelesProController.cs" />
     <Compile Include="Assets\script\FinController.cs" />
     <Compile Include="Assets\script\LuzController.cs" />
     <Compile Include="Assets\script\old\ArmaController - copia.cs" />
@@ -256,6 +257,7 @@
     <Compile Include="Assets\script\old\PlataformaMovilController - copia.cs" />
     <Compile Include="Assets\script\PlayerController.cs" />
     <Compile Include="Assets\script\PlayerOscuroController.cs" />
+    <Compile Include="Assets\script\PlayerProController.cs" />
     <Compile Include="Assets\script\PointController.cs" />
     <Compile Include="Packages\com.unity.xiaomi\UnityChannel\XiaomiSupport\AppStoreSettings.cs" />
   </ItemGroup>
