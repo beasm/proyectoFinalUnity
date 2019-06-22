@@ -66,7 +66,6 @@
     <Compile Include="Assets\script\CanvasControllerInicio.cs" />
     <Compile Include="Assets\script\CanvasNivelesController.cs" />
     <Compile Include="Assets\script\CanvasNivelesOscurosController.cs" />
-    <Compile Include="Assets\script\CanvasNivelesProController.cs" />
     <Compile Include="Assets\script\FinController.cs" />
     <Compile Include="Assets\script\LuzController.cs" />
     <Compile Include="Assets\script\old\ArmaController - copia.cs" />
@@ -80,7 +79,6 @@
     <Compile Include="Assets\script\old\PlataformaMovilController - copia.cs" />
     <Compile Include="Assets\script\PlayerController.cs" />
     <Compile Include="Assets\script\PlayerOscuroController.cs" />
-    <Compile Include="Assets\script\PlayerProController.cs" />
     <Compile Include="Assets\script\PointController.cs" />
     <None Include="Assets\8 Bit Composers Super Pack LE (Free)\8 Bit Composers Super Pack LE.txt" />
     <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
@@ -96,8 +94,11 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/bea_s/AndroidStudioProjects/Unity Project Final/Unity Project Final/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="com.unity.xiaomi">
-      <HintPath>C:/Users/bea_s/AndroidStudioProjects/Unity Project Final/Unity Project Final/Library/ScriptAssemblies/com.unity.xiaomi.dll</HintPath>
+    <Reference Include="Editor">
+      <HintPath>C:/Users/bea_s/AndroidStudioProjects/Unity Project Final/Unity Project Final/Library/ScriptAssemblies/Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="XiaomiSupport">
+      <HintPath>C:/Users/bea_s/AndroidStudioProjects/Unity Project Final/Unity Project Final/Library/ScriptAssemblies/XiaomiSupport.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -304,10 +305,10 @@
       <HintPath>C:/Users/bea_s/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="ChannelPurchase">
-      <HintPath>C:/Users/bea_s/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.xiaomi@1.0.0/UnityChannel/ChannelPurchase.dll</HintPath>
+      <HintPath>C:/Users/bea_s/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.xiaomi@1.0.3/ChannelPurchase.dll</HintPath>
     </Reference>
     <Reference Include="UnityStore">
-      <HintPath>C:/Users/bea_s/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.xiaomi@1.0.0/UnityChannel/UnityStore.dll</HintPath>
+      <HintPath>C:/Users/bea_s/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.xiaomi@1.0.3/UnityStore.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
