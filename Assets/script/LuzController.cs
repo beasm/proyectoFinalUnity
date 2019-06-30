@@ -6,12 +6,17 @@ public class LuzController : MonoBehaviour
 {
     public GameObject luz;
 
-    // Use this for initialization
+    /*
+    * funcion para inicializar las variable
+    */
     void Start()
     {
         StartCoroutine("EncenderApagaLuz");
     }
 
+    /*
+     * Activa o desactiva la luz despues de esperar una segundos
+     */ 
     IEnumerator EncenderApagaLuz()
     {
         yield return new WaitForSeconds(2f);

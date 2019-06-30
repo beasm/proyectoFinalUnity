@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="16.0" version="16.0" Modules="simple" RootPath="." Language="en" Id="{BC695E7F-D2A8-46B2-A196-CF869FC5FC9C}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;DigCertStoreComponent;MsiAssemblyComponent;MsiClassComponent;MsiServInstComponent;MsiExtComponent;TilesComponent;MsiOrgComponent;FixupComponent;MsiThemeComponent;BackgroundImagesComponent;UpdaterComponent;SerValComponent;MsiInstExSeqComponent;DictionaryComponent;MsiAppSearchComponent;MsiOdbcDataSrcComponent;CPLAppletComponent;ActSyncAppComponent;PreReqComponent;WebApplicationsComponent;MsiJavaComponent;MsiDriverPackagesComponent;UserAccountsComponent;ScheduledTasksComponent;SqlConnectionComponent;AutorunComponent;FirewallExceptionComponent;GameUxComponent;MsiDirectEditorComponent;SharePointSlnComponent;SilverlightSlnComponent;MultipleInstancesComponent;SccmComponent;TilesComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_RUN_AS_ADMIN" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPPRODUCTICON" Value="star_favourite_15499.exe" Type="8"/>
+    <ROW Property="ARPURLINFOABOUT" Value="https://github.com/beasm/proyectoFinalWeb"/>
+    <ROW Property="Manufacturer" Value="Bea Company"/>
+    <ROW Property="ProductCode" Value="1033:{64C5DCED-F4D5-4D9A-9217-BF9A4D7BB72F} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Beatriz Soria Matilla"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{592DED88-0A5E-4854-88B5-3BA154AAD995}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="BeaUnityProjectFinal_Data_Dir" Directory_Parent="PC_Dir" DefaultDir="BEAUNI~1|BeaUnityProjectFinal_Data"/>
+    <ROW Directory="Browsers_Dir" Directory_Parent="__1_Dir" DefaultDir="Browsers"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="EmbedRuntime_Dir" Directory_Parent="Mono_Dir" DefaultDir="EMBEDR~1|EmbedRuntime"/>
+    <ROW Directory="Managed_Dir" Directory_Parent="BeaUnityProjectFinal_Data_Dir" DefaultDir="Managed"/>
+    <ROW Directory="Mono_Dir" Directory_Parent="PC_Dir" DefaultDir="Mono"/>
+    <ROW Directory="PC_Dir" Directory_Parent="ProgramFilesFolder" DefaultDir="PROGRA~1|Programando Estrellas"/>
+    <ROW Directory="ProgramFilesFolder" Directory_Parent="TARGETDIR" DefaultDir="PROGRA~1|ProgramFilesFolder" IsPseudoRoot="1"/>
+    <ROW Directory="ProgramMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="PROGRA~2|ProgramMenuFolder" IsPseudoRoot="1"/>
+    <ROW Directory="Resources_Dir" Directory_Parent="BeaUnityProjectFinal_Data_Dir" DefaultDir="RESOUR~1|Resources"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="__1_Dir" Directory_Parent="mono_Dir" DefaultDir="2.0"/>
+    <ROW Directory="__Dir" Directory_Parent="mono_Dir" DefaultDir="1.0"/>
+    <ROW Directory="etc_Dir" Directory_Parent="Mono_Dir" DefaultDir="etc"/>
+    <ROW Directory="mconfig_Dir" Directory_Parent="mono_Dir" DefaultDir="mconfig"/>
+    <ROW Directory="mono_Dir" Directory_Parent="etc_Dir" DefaultDir="mono"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{39BD6F6A-AA89-43D7-82C1-106BBC2FB2FA}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="AssemblyCSharp.dll" ComponentId="{5F7C8E0A-43BD-46D5-ABBF-3ECF603916D4}" Directory_="Managed_Dir" Attributes="0" KeyPath="AssemblyCSharp.dll"/>
+    <ROW Component="BeaUnityProjectFinal.exe" ComponentId="{7C156A9B-EEC9-4460-B64F-B1593C659FF6}" Directory_="PC_Dir" Attributes="0" KeyPath="BeaUnityProjectFinal.exe"/>
+    <ROW Component="ChannelPurchase.dll" ComponentId="{E4F5A3E9-C9CE-4C92-B210-74AC24579328}" Directory_="Managed_Dir" Attributes="0" KeyPath="ChannelPurchase.dll"/>
+    <ROW Component="Compat.browser" ComponentId="{C5EF1770-5BD3-4215-9708-0BB7B305F762}" Directory_="Browsers_Dir" Attributes="0" KeyPath="Compat.browser" Type="0"/>
+    <ROW Component="DefaultWsdlHelpGenerator.aspx" ComponentId="{A20C1B37-0A54-4D33-AD1F-27652C117D65}" Directory_="__Dir" Attributes="0" KeyPath="DefaultWsdlHelpGenerator.aspx" Type="0"/>
+    <ROW Component="DefaultWsdlHelpGenerator.aspx_1" ComponentId="{8E60EC33-CF22-4CF7-B721-C13597481CE8}" Directory_="__1_Dir" Attributes="0" KeyPath="DefaultWsdlHelpGenerator.aspx_1" Type="0"/>
+    <ROW Component="Mono.Security.dll" ComponentId="{153CAEAF-6CCE-417B-BBF5-93BCB667B580}" Directory_="Managed_Dir" Attributes="0" KeyPath="Mono.Security.dll"/>
+    <ROW Component="MonoPosixHelper.dll" ComponentId="{565F13EB-E996-4950-9076-355978FF0B3F}" Directory_="EmbedRuntime_Dir" Attributes="0" KeyPath="MonoPosixHelper.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{A38E848C-8318-4EE4-975A-71A4BE271150}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{24B30895-7D23-45F8-A441-994313C7FEE5}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="System.Core.dll" ComponentId="{B6773689-960A-4D25-BD08-77F855D62DBF}" Directory_="Managed_Dir" Attributes="0" KeyPath="System.Core.dll"/>
+    <ROW Component="System.dll" ComponentId="{A4865705-247C-49B7-A3EB-F90D5115189C}" Directory_="Managed_Dir" Attributes="0" KeyPath="System.dll"/>
+    <ROW Component="Unity.TextMeshPro.dll" ComponentId="{346FCA18-7A9C-49AB-BB6C-E78AF3A10CBF}" Directory_="Managed_Dir" Attributes="0" KeyPath="Unity.TextMeshPro.dll"/>
+    <ROW Component="UnityCrashHandler32.exe" ComponentId="{AD9C0C24-1000-4DA0-940D-B8DEBE01A856}" Directory_="PC_Dir" Attributes="0" KeyPath="UnityCrashHandler32.exe"/>
+    <ROW Component="UnityEngine.AIModule.dll" ComponentId="{8BDD72AC-FCDA-4449-848B-D4CE3E0923AE}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.AIModule.dll"/>
+    <ROW Component="UnityEngine.ARModule.dll" ComponentId="{48097BF4-A777-417A-987F-F9747DBE717F}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.ARModule.dll"/>
+    <ROW Component="UnityEngine.AccessibilityModule.dll" ComponentId="{E092F385-5198-4B9F-AFB7-C5F335142D79}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.AccessibilityModule.dll"/>
+    <ROW Component="UnityEngine.AccessibilityModule.xml" ComponentId="{37088297-528D-4732-A497-4DE1B82F6126}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.AccessibilityModule.xml" Type="0"/>
+    <ROW Component="UnityEngine.Analytics.dll" ComponentId="{6163D2D6-F2A0-4541-986D-666F9FEE09D8}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.Analytics.dll"/>
+    <ROW Component="UnityEngine.AnimationModule.dll" ComponentId="{F19EFA5B-DDAB-4597-8F0D-727B0CB76941}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.AnimationModule.dll"/>
+    <ROW Component="UnityEngine.AssetBundleModule.dll" ComponentId="{1063E36E-5733-43E7-9A57-6962C5CC5573}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.AssetBundleModule.dll"/>
+    <ROW Component="UnityEngine.AudioModule.dll" ComponentId="{97ADC560-5511-4A58-AC4A-7F6A64CD444B}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.AudioModule.dll"/>
+    <ROW Component="UnityEngine.BaselibModule.dll" ComponentId="{8114C435-B2B1-4B35-B8CA-0F95E3DC8627}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.BaselibModule.dll"/>
+    <ROW Component="UnityEngine.ClothModule.dll" ComponentId="{B1CE8C50-1561-4376-90B5-5CB163753418}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.ClothModule.dll"/>
+    <ROW Component="UnityEngine.CloudWebServicesModule.dll" ComponentId="{1346FED4-F60B-4327-A0DB-2D32E5D3190E}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.CloudWebServicesModule.dll"/>
+    <ROW Component="UnityEngine.ClusterInputModule.dll" ComponentId="{84953365-83D9-42E1-9131-0FD8F6C531A5}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.ClusterInputModule.dll"/>
+    <ROW Component="UnityEngine.ClusterRendererModule.dll" ComponentId="{8C577E71-08A3-4948-A671-A17C102F4921}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.ClusterRendererModule.dll"/>
+    <ROW Component="UnityEngine.CoreModule.dll" ComponentId="{B4698E23-DAC6-46EF-8B69-F3A3CABDE11C}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.CoreModule.dll"/>
+    <ROW Component="UnityEngine.CrashReportingModule.dll" ComponentId="{B5B2F880-A3B6-45EC-A07F-0E37477EDA0C}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.CrashReportingModule.dll"/>
+    <ROW Component="UnityEngine.DirectorModule.dll" ComponentId="{883802A6-441C-4C87-BF70-57507AB5DDDA}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.DirectorModule.dll"/>
+    <ROW Component="UnityEngine.FacebookModule.dll" ComponentId="{7733A23E-461C-4DB5-ADCE-AF19C6C3CB30}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.FacebookModule.dll"/>
+    <ROW Component="UnityEngine.FileSystemHttpModule.dll" ComponentId="{E6E456E9-572F-4031-BFA1-44854BC1B29E}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.FileSystemHttpModule.dll"/>
+    <ROW Component="UnityEngine.GameCenterModule.dll" ComponentId="{2B6FBF4E-39AC-400A-B622-9E4213E6BF2C}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.GameCenterModule.dll"/>
+    <ROW Component="UnityEngine.GridModule.dll" ComponentId="{3C7225E9-8B8F-4FE2-B925-CA0285D7681D}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.GridModule.dll"/>
+    <ROW Component="UnityEngine.HotReloadModule.dll" ComponentId="{327A1149-A3EA-49E2-9F3B-5B80A03BF810}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.HotReloadModule.dll"/>
+    <ROW Component="UnityEngine.IMGUIModule.dll" ComponentId="{1BA1D1F1-E3AC-4B25-A65F-F0B619601DB3}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.IMGUIModule.dll"/>
+    <ROW Component="UnityEngine.ImageConversionModule.dll" ComponentId="{5A70464D-ABC2-42BB-A7C4-5FF70C026DAD}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.ImageConversionModule.dll"/>
+    <ROW Component="UnityEngine.InputModule.dll" ComponentId="{CFC2DBAA-7105-44EB-9FCA-4A73ACBEBE05}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.InputModule.dll"/>
+    <ROW Component="UnityEngine.JSONSerializeModule.dll" ComponentId="{3510BFF1-FE63-4A3C-B705-EF43769E533D}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.JSONSerializeModule.dll"/>
+    <ROW Component="UnityEngine.LocalizationModule.dll" ComponentId="{9A2E201C-DC94-4FA4-900B-9887279C6BF4}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.LocalizationModule.dll"/>
+    <ROW Component="UnityEngine.Networking.dll" ComponentId="{7E5BC1E2-B5AC-4740-B755-063E6B12CFA4}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.Networking.dll"/>
+    <ROW Component="UnityEngine.ParticleSystemModule.dll" ComponentId="{3AC3BEC4-9A5B-46E6-B8F2-F2A494A7C474}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.ParticleSystemModule.dll"/>
+    <ROW Component="UnityEngine.ParticlesLegacyModule.dll" ComponentId="{D2376E22-3814-4E01-8B86-A00730BCF5CD}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.ParticlesLegacyModule.dll"/>
+    <ROW Component="UnityEngine.PerformanceReportingModule.dll" ComponentId="{EBAAB296-8C52-47E9-B60C-9992EEE76CB9}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.PerformanceReportingModule.dll"/>
+    <ROW Component="UnityEngine.Physics2DModule.dll" ComponentId="{71E153C8-4F8C-4581-82F7-AD15D87C1A91}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.Physics2DModule.dll"/>
+    <ROW Component="UnityEngine.PhysicsModule.dll" ComponentId="{5689613C-2EFF-4B87-85D9-34B39858B00E}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.PhysicsModule.dll"/>
+    <ROW Component="UnityEngine.ProfilerModule.dll" ComponentId="{BABCADE3-3C8F-4D30-90C3-4E6C87DB080D}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.ProfilerModule.dll"/>
+    <ROW Component="UnityEngine.ScreenCaptureModule.dll" ComponentId="{823D3420-343D-4197-89C3-66BBEF5B5584}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.ScreenCaptureModule.dll"/>
+    <ROW Component="UnityEngine.SharedInternalsModule.dll" ComponentId="{79BC91B5-54EF-496F-8981-012E46A6D467}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.SharedInternalsModule.dll"/>
+    <ROW Component="UnityEngine.SpatialTracking.dll" ComponentId="{1D62099F-4233-4865-8471-FD09B4ED313D}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.SpatialTracking.dll"/>
+    <ROW Component="UnityEngine.SpriteMaskModule.dll" ComponentId="{61DBB553-48E0-42EE-B2FA-3949FE712034}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.SpriteMaskModule.dll"/>
+    <ROW Component="UnityEngine.SpriteShapeModule.dll" ComponentId="{B2E3FA50-0C64-46FD-9FF2-AF4CE33FD597}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.SpriteShapeModule.dll"/>
+    <ROW Component="UnityEngine.StandardEvents.dll" ComponentId="{7974AEB2-003D-48E0-9543-2C1CD4E045CF}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.StandardEvents.dll"/>
+    <ROW Component="UnityEngine.StreamingModule.dll" ComponentId="{CF5EFE1F-3580-49A9-B329-74C2B3591F8A}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.StreamingModule.dll"/>
+    <ROW Component="UnityEngine.StyleSheetsModule.dll" ComponentId="{8DC0D2DE-36F0-480F-B28A-38578277E859}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.StyleSheetsModule.dll"/>
+    <ROW Component="UnityEngine.SubstanceModule.dll" ComponentId="{A183D4B5-2FF3-4022-9B0B-CC1F5CDF2CC3}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.SubstanceModule.dll"/>
+    <ROW Component="UnityEngine.TLSModule.dll" ComponentId="{5A9091DF-8CC9-4AD2-BBC5-660B41CA27B1}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.TLSModule.dll"/>
+    <ROW Component="UnityEngine.TerrainModule.dll" ComponentId="{0E0448EF-DAF9-4B87-A119-9616A319A37E}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.TerrainModule.dll"/>
+    <ROW Component="UnityEngine.TerrainPhysicsModule.dll" ComponentId="{1E13D79F-8664-4607-8CA4-0C5AF12B38BB}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.TerrainPhysicsModule.dll"/>
+    <ROW Component="UnityEngine.TextRenderingModule.dll" ComponentId="{2E951566-58D2-4971-A750-195264BA0CE4}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.TextRenderingModule.dll"/>
+    <ROW Component="UnityEngine.TilemapModule.dll" ComponentId="{AB3C1C1E-60C6-44D0-B50C-6F6716413A78}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.TilemapModule.dll"/>
+    <ROW Component="UnityEngine.Timeline.dll" ComponentId="{8017E1E2-C406-4A0E-9558-99C122CE35A6}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.Timeline.dll"/>
+    <ROW Component="UnityEngine.TimelineModule.dll" ComponentId="{F75E573F-FB07-4B37-9695-E7F5DA560E75}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.TimelineModule.dll"/>
+    <ROW Component="UnityEngine.UI.dll" ComponentId="{F4B52D50-573E-49F9-A642-7B4A96BD40A5}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.UI.dll"/>
+    <ROW Component="UnityEngine.UIElementsModule.dll" ComponentId="{B7A553A9-46A3-43E8-970F-C9EA1795CC19}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.UIElementsModule.dll"/>
+    <ROW Component="UnityEngine.UIModule.dll" ComponentId="{0D9ED17A-2887-4EDC-BA87-3664907AF66D}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.UIModule.dll"/>
+    <ROW Component="UnityEngine.UNETModule.dll" ComponentId="{EC1A8DF1-59DD-4EAF-AF6B-9CE59556EE29}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.UNETModule.dll"/>
+    <ROW Component="UnityEngine.UmbraModule.dll" ComponentId="{EA6E004F-36CF-410D-A671-4FA000C4196C}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.UmbraModule.dll"/>
+    <ROW Component="UnityEngine.UnityAnalyticsModule.dll" ComponentId="{6E44B1EE-344E-4963-929F-C97A3B2A7EA1}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.UnityAnalyticsModule.dll"/>
+    <ROW Component="UnityEngine.UnityConnectModule.dll" ComponentId="{7600C982-1849-4EBD-BED6-04B2993462F3}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.UnityConnectModule.dll"/>
+    <ROW Component="UnityEngine.UnityWebRequestAssetBundleModule.dll" ComponentId="{48178E24-83FA-4E39-B516-5FE1D5475C20}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.UnityWebRequestAssetBundleModule.dll"/>
+    <ROW Component="UnityEngine.UnityWebRequestAudioModule.dll" ComponentId="{275B3126-B3BE-4753-A90B-B8A323510B86}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.UnityWebRequestAudioModule.dll"/>
+    <ROW Component="UnityEngine.UnityWebRequestModule.dll" ComponentId="{B906FE7A-5367-4FCA-A44E-B05AD44CAC7C}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.UnityWebRequestModule.dll"/>
+    <ROW Component="UnityEngine.UnityWebRequestTextureModule.dll" ComponentId="{D1BA421E-6C94-41EF-B415-65C4C0B76101}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.UnityWebRequestTextureModule.dll"/>
+    <ROW Component="UnityEngine.UnityWebRequestWWWModule.dll" ComponentId="{21F01429-56C8-4999-A12F-D51CC379CB37}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.UnityWebRequestWWWModule.dll"/>
+    <ROW Component="UnityEngine.VRModule.dll" ComponentId="{978E6A7C-DF07-4C81-9395-07C746205E9B}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.VRModule.dll"/>
+    <ROW Component="UnityEngine.VehiclesModule.dll" ComponentId="{CDC49EE7-8A38-44F5-8290-A132B225C95A}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.VehiclesModule.dll"/>
+    <ROW Component="UnityEngine.VideoModule.dll" ComponentId="{070FD482-6DA3-49C2-91B0-895A2A1FA770}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.VideoModule.dll"/>
+    <ROW Component="UnityEngine.WindModule.dll" ComponentId="{B3207522-1B18-466D-95A9-B4CEFF25B35F}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.WindModule.dll"/>
+    <ROW Component="UnityEngine.XRModule.dll" ComponentId="{3FEAED8B-8302-4B48-98E0-00DD68F49909}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.XRModule.dll"/>
+    <ROW Component="UnityEngine.dll" ComponentId="{2CCB4233-40E6-4427-B919-5393DC9BBEE4}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityEngine.dll"/>
+    <ROW Component="UnityPlayer.dll" ComponentId="{6AA1989F-470C-4D26-8F0E-C8A92EEB378A}" Directory_="PC_Dir" Attributes="0" KeyPath="UnityPlayer.dll"/>
+    <ROW Component="UnityStore.dll" ComponentId="{EFCFF799-7867-4105-B132-A4BFB6A96ECC}" Directory_="Managed_Dir" Attributes="0" KeyPath="UnityStore.dll"/>
+    <ROW Component="XiaomiSupport.dll" ComponentId="{7860A072-2C36-46FC-9F52-DAE05FF826B2}" Directory_="Managed_Dir" Attributes="0" KeyPath="XiaomiSupport.dll"/>
+    <ROW Component="app.info" ComponentId="{7E61BB72-CD24-4290-85C7-381F08A478A9}" Directory_="BeaUnityProjectFinal_Data_Dir" Attributes="0" KeyPath="app.info" Type="0"/>
+    <ROW Component="browscap.ini" ComponentId="{1F23B658-A7A9-4158-B712-70D7E43ED82F}" Directory_="mono_Dir" Attributes="0" KeyPath="browscap.ini" Type="0"/>
+    <ROW Component="config.xml" ComponentId="{09D10D4A-DE32-4C48-B028-D9B5B4B8EFAE}" Directory_="mconfig_Dir" Attributes="0" KeyPath="config.xml" Type="0"/>
+    <ROW Component="mono.dll" ComponentId="{DDF0A741-3DD1-4C8F-B703-F6736FF9F675}" Directory_="EmbedRuntime_Dir" Attributes="0" KeyPath="mono.dll"/>
+    <ROW Component="mscorlib.dll" ComponentId="{0A737F06-3E29-4E96-8E80-E85F429AF77F}" Directory_="Managed_Dir" Attributes="0" KeyPath="mscorlib.dll"/>
+    <ROW Component="unitydefaultresources" ComponentId="{D8C45EC7-27F5-487E-9A5B-57C53B94DD8A}" Directory_="Resources_Dir" Attributes="0" KeyPath="unitydefaultresources" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="BeaUnityProjectFinal.exe" Component_="BeaUnityProjectFinal.exe" FileName="BEAUNI~1.EXE|BeaUnityProjectFinal.exe" Attributes="0" SourcePath="BeaUnityProjectFinal.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="app.info" Component_="app.info" FileName="APP~1.INF|app.info" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\app.info" SelfReg="false"/>
+    <ROW File="boot.config" Component_="app.info" FileName="BOOT~1.CON|boot.config" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\boot.config" SelfReg="false"/>
+    <ROW File="globalgamemanagers" Component_="app.info" FileName="GLOBAL~1|globalgamemanagers" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\globalgamemanagers" SelfReg="false"/>
+    <ROW File="globalgamemanagers.assets" Component_="app.info" FileName="GLOBAL~1.ASS|globalgamemanagers.assets" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\globalgamemanagers.assets" SelfReg="false"/>
+    <ROW File="level0" Component_="app.info" FileName="level0" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\level0" SelfReg="false"/>
+    <ROW File="level1" Component_="app.info" FileName="level1" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\level1" SelfReg="false"/>
+    <ROW File="level2" Component_="app.info" FileName="level2" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\level2" SelfReg="false"/>
+    <ROW File="level3" Component_="app.info" FileName="level3" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\level3" SelfReg="false"/>
+    <ROW File="level4" Component_="app.info" FileName="level4" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\level4" SelfReg="false"/>
+    <ROW File="AssemblyCSharp.dll" Component_="AssemblyCSharp.dll" FileName="ASSEMB~1.DLL|Assembly-CSharp.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\Assembly-CSharp.dll" SelfReg="false"/>
+    <ROW File="ChannelPurchase.dll" Component_="ChannelPurchase.dll" FileName="CHANNE~1.DLL|ChannelPurchase.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\ChannelPurchase.dll" SelfReg="false"/>
+    <ROW File="Mono.Security.dll" Component_="Mono.Security.dll" FileName="MONOSE~1.DLL|Mono.Security.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\Mono.Security.dll" SelfReg="false"/>
+    <ROW File="mscorlib.dll" Component_="mscorlib.dll" FileName="mscorlib.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\mscorlib.dll" SelfReg="false"/>
+    <ROW File="System.Core.dll" Component_="System.Core.dll" FileName="SYSTEM~1.DLL|System.Core.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\System.Core.dll" SelfReg="false"/>
+    <ROW File="System.dll" Component_="System.dll" FileName="System.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\System.dll" SelfReg="false"/>
+    <ROW File="Unity.TextMeshPro.dll" Component_="Unity.TextMeshPro.dll" FileName="UNITYT~1.DLL|Unity.TextMeshPro.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\Unity.TextMeshPro.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.AccessibilityModule.dll" Component_="UnityEngine.AccessibilityModule.dll" FileName="UNITYE~1.DLL|UnityEngine.AccessibilityModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.AccessibilityModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.AccessibilityModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITYE~1.XML|UnityEngine.AccessibilityModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.AccessibilityModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.AIModule.dll" Component_="UnityEngine.AIModule.dll" FileName="UNITYE~2.DLL|UnityEngine.AIModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.AIModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.AIModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITYE~2.XML|UnityEngine.AIModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.AIModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.Analytics.dll" Component_="UnityEngine.Analytics.dll" FileName="UNITYE~3.DLL|UnityEngine.Analytics.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.Analytics.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.AnimationModule.dll" Component_="UnityEngine.AnimationModule.dll" FileName="UNITYE~4.DLL|UnityEngine.AnimationModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.AnimationModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.AnimationModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITYE~3.XML|UnityEngine.AnimationModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.AnimationModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.ARModule.dll" Component_="UnityEngine.ARModule.dll" FileName="UNITYE~5.DLL|UnityEngine.ARModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.ARModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.ARModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITYE~4.XML|UnityEngine.ARModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.ARModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.AssetBundleModule.dll" Component_="UnityEngine.AssetBundleModule.dll" FileName="UNITYE~6.DLL|UnityEngine.AssetBundleModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.AssetBundleModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.AssetBundleModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITYE~5.XML|UnityEngine.AssetBundleModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.AssetBundleModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.AudioModule.dll" Component_="UnityEngine.AudioModule.dll" FileName="UNITYE~7.DLL|UnityEngine.AudioModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.AudioModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.AudioModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITYE~6.XML|UnityEngine.AudioModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.AudioModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.BaselibModule.dll" Component_="UnityEngine.BaselibModule.dll" FileName="UNITYE~8.DLL|UnityEngine.BaselibModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.BaselibModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.BaselibModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITYE~7.XML|UnityEngine.BaselibModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.BaselibModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.ClothModule.dll" Component_="UnityEngine.ClothModule.dll" FileName="UNITYE~9.DLL|UnityEngine.ClothModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.ClothModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.ClothModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITYE~8.XML|UnityEngine.ClothModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.ClothModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.CloudWebServicesModule.dll" Component_="UnityEngine.CloudWebServicesModule.dll" FileName="UNITY~10.DLL|UnityEngine.CloudWebServicesModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.CloudWebServicesModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.CloudWebServicesModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITYE~9.XML|UnityEngine.CloudWebServicesModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.CloudWebServicesModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.ClusterInputModule.dll" Component_="UnityEngine.ClusterInputModule.dll" FileName="UNITY~11.DLL|UnityEngine.ClusterInputModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.ClusterInputModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.ClusterInputModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~10.XML|UnityEngine.ClusterInputModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.ClusterInputModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.ClusterRendererModule.dll" Component_="UnityEngine.ClusterRendererModule.dll" FileName="UNITY~12.DLL|UnityEngine.ClusterRendererModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.ClusterRendererModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.ClusterRendererModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~11.XML|UnityEngine.ClusterRendererModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.ClusterRendererModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.CoreModule.dll" Component_="UnityEngine.CoreModule.dll" FileName="UNITY~13.DLL|UnityEngine.CoreModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.CoreModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.CoreModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~12.XML|UnityEngine.CoreModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.CoreModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.CrashReportingModule.dll" Component_="UnityEngine.CrashReportingModule.dll" FileName="UNITY~14.DLL|UnityEngine.CrashReportingModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.CrashReportingModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.CrashReportingModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~13.XML|UnityEngine.CrashReportingModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.CrashReportingModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.DirectorModule.dll" Component_="UnityEngine.DirectorModule.dll" FileName="UNITY~15.DLL|UnityEngine.DirectorModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.DirectorModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.DirectorModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~14.XML|UnityEngine.DirectorModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.DirectorModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.dll" Component_="UnityEngine.dll" FileName="UNITY~16.DLL|UnityEngine.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.FacebookModule.dll" Component_="UnityEngine.FacebookModule.dll" FileName="UNITY~17.DLL|UnityEngine.FacebookModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.FacebookModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.FacebookModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~15.XML|UnityEngine.FacebookModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.FacebookModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.FileSystemHttpModule.dll" Component_="UnityEngine.FileSystemHttpModule.dll" FileName="UNITY~18.DLL|UnityEngine.FileSystemHttpModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.FileSystemHttpModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.FileSystemHttpModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~16.XML|UnityEngine.FileSystemHttpModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.FileSystemHttpModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.GameCenterModule.dll" Component_="UnityEngine.GameCenterModule.dll" FileName="UNITY~19.DLL|UnityEngine.GameCenterModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.GameCenterModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.GameCenterModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~17.XML|UnityEngine.GameCenterModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.GameCenterModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.GridModule.dll" Component_="UnityEngine.GridModule.dll" FileName="UNITY~20.DLL|UnityEngine.GridModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.GridModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.GridModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~18.XML|UnityEngine.GridModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.GridModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.HotReloadModule.dll" Component_="UnityEngine.HotReloadModule.dll" FileName="UNITY~21.DLL|UnityEngine.HotReloadModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.HotReloadModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.HotReloadModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~19.XML|UnityEngine.HotReloadModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.HotReloadModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.ImageConversionModule.dll" Component_="UnityEngine.ImageConversionModule.dll" FileName="UNITY~22.DLL|UnityEngine.ImageConversionModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.ImageConversionModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.ImageConversionModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~20.XML|UnityEngine.ImageConversionModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.ImageConversionModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.IMGUIModule.dll" Component_="UnityEngine.IMGUIModule.dll" FileName="UNITY~23.DLL|UnityEngine.IMGUIModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.IMGUIModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.IMGUIModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~21.XML|UnityEngine.IMGUIModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.IMGUIModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.InputModule.dll" Component_="UnityEngine.InputModule.dll" FileName="UNITY~24.DLL|UnityEngine.InputModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.InputModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.InputModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~22.XML|UnityEngine.InputModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.InputModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.JSONSerializeModule.dll" Component_="UnityEngine.JSONSerializeModule.dll" FileName="UNITY~25.DLL|UnityEngine.JSONSerializeModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.JSONSerializeModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.JSONSerializeModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~23.XML|UnityEngine.JSONSerializeModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.JSONSerializeModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.LocalizationModule.dll" Component_="UnityEngine.LocalizationModule.dll" FileName="UNITY~26.DLL|UnityEngine.LocalizationModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.LocalizationModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.LocalizationModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~24.XML|UnityEngine.LocalizationModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.LocalizationModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.Networking.dll" Component_="UnityEngine.Networking.dll" FileName="UNITY~27.DLL|UnityEngine.Networking.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.Networking.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.ParticlesLegacyModule.dll" Component_="UnityEngine.ParticlesLegacyModule.dll" FileName="UNITY~28.DLL|UnityEngine.ParticlesLegacyModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.ParticlesLegacyModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.ParticlesLegacyModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~25.XML|UnityEngine.ParticlesLegacyModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.ParticlesLegacyModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.ParticleSystemModule.dll" Component_="UnityEngine.ParticleSystemModule.dll" FileName="UNITY~29.DLL|UnityEngine.ParticleSystemModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.ParticleSystemModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.ParticleSystemModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~26.XML|UnityEngine.ParticleSystemModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.ParticleSystemModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.PerformanceReportingModule.dll" Component_="UnityEngine.PerformanceReportingModule.dll" FileName="UNITY~30.DLL|UnityEngine.PerformanceReportingModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.PerformanceReportingModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.PerformanceReportingModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~27.XML|UnityEngine.PerformanceReportingModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.PerformanceReportingModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.Physics2DModule.dll" Component_="UnityEngine.Physics2DModule.dll" FileName="UNITY~31.DLL|UnityEngine.Physics2DModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.Physics2DModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.Physics2DModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~28.XML|UnityEngine.Physics2DModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.Physics2DModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.PhysicsModule.dll" Component_="UnityEngine.PhysicsModule.dll" FileName="UNITY~32.DLL|UnityEngine.PhysicsModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.PhysicsModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.PhysicsModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~29.XML|UnityEngine.PhysicsModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.PhysicsModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.ProfilerModule.dll" Component_="UnityEngine.ProfilerModule.dll" FileName="UNITY~33.DLL|UnityEngine.ProfilerModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.ProfilerModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.ProfilerModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~30.XML|UnityEngine.ProfilerModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.ProfilerModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.ScreenCaptureModule.dll" Component_="UnityEngine.ScreenCaptureModule.dll" FileName="UNITY~34.DLL|UnityEngine.ScreenCaptureModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.ScreenCaptureModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.ScreenCaptureModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~31.XML|UnityEngine.ScreenCaptureModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.ScreenCaptureModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.SharedInternalsModule.dll" Component_="UnityEngine.SharedInternalsModule.dll" FileName="UNITY~35.DLL|UnityEngine.SharedInternalsModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.SharedInternalsModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.SharedInternalsModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~32.XML|UnityEngine.SharedInternalsModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.SharedInternalsModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.SpatialTracking.dll" Component_="UnityEngine.SpatialTracking.dll" FileName="UNITY~36.DLL|UnityEngine.SpatialTracking.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.SpatialTracking.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.SpriteMaskModule.dll" Component_="UnityEngine.SpriteMaskModule.dll" FileName="UNITY~37.DLL|UnityEngine.SpriteMaskModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.SpriteMaskModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.SpriteMaskModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~33.XML|UnityEngine.SpriteMaskModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.SpriteMaskModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.SpriteShapeModule.dll" Component_="UnityEngine.SpriteShapeModule.dll" FileName="UNITY~38.DLL|UnityEngine.SpriteShapeModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.SpriteShapeModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.SpriteShapeModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~34.XML|UnityEngine.SpriteShapeModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.SpriteShapeModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.StandardEvents.dll" Component_="UnityEngine.StandardEvents.dll" FileName="UNITY~39.DLL|UnityEngine.StandardEvents.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.StandardEvents.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.StreamingModule.dll" Component_="UnityEngine.StreamingModule.dll" FileName="UNITY~40.DLL|UnityEngine.StreamingModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.StreamingModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.StreamingModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~35.XML|UnityEngine.StreamingModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.StreamingModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.StyleSheetsModule.dll" Component_="UnityEngine.StyleSheetsModule.dll" FileName="UNITY~41.DLL|UnityEngine.StyleSheetsModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.StyleSheetsModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.StyleSheetsModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~36.XML|UnityEngine.StyleSheetsModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.StyleSheetsModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.SubstanceModule.dll" Component_="UnityEngine.SubstanceModule.dll" FileName="UNITY~42.DLL|UnityEngine.SubstanceModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.SubstanceModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.SubstanceModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~37.XML|UnityEngine.SubstanceModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.SubstanceModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.TerrainModule.dll" Component_="UnityEngine.TerrainModule.dll" FileName="UNITY~43.DLL|UnityEngine.TerrainModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.TerrainModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.TerrainModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~38.XML|UnityEngine.TerrainModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.TerrainModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.TerrainPhysicsModule.dll" Component_="UnityEngine.TerrainPhysicsModule.dll" FileName="UNITY~44.DLL|UnityEngine.TerrainPhysicsModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.TerrainPhysicsModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.TerrainPhysicsModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~39.XML|UnityEngine.TerrainPhysicsModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.TerrainPhysicsModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.TextRenderingModule.dll" Component_="UnityEngine.TextRenderingModule.dll" FileName="UNITY~45.DLL|UnityEngine.TextRenderingModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.TextRenderingModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.TextRenderingModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~40.XML|UnityEngine.TextRenderingModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.TextRenderingModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.TilemapModule.dll" Component_="UnityEngine.TilemapModule.dll" FileName="UNITY~46.DLL|UnityEngine.TilemapModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.TilemapModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.TilemapModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~41.XML|UnityEngine.TilemapModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.TilemapModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.Timeline.dll" Component_="UnityEngine.Timeline.dll" FileName="UNITY~47.DLL|UnityEngine.Timeline.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.Timeline.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.TimelineModule.dll" Component_="UnityEngine.TimelineModule.dll" FileName="UNITY~48.DLL|UnityEngine.TimelineModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.TimelineModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.TimelineModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~42.XML|UnityEngine.TimelineModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.TimelineModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.TLSModule.dll" Component_="UnityEngine.TLSModule.dll" FileName="UNITY~49.DLL|UnityEngine.TLSModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.TLSModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.TLSModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~43.XML|UnityEngine.TLSModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.TLSModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.UI.dll" Component_="UnityEngine.UI.dll" FileName="UNITY~50.DLL|UnityEngine.UI.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UI.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.UIElementsModule.dll" Component_="UnityEngine.UIElementsModule.dll" FileName="UNITY~51.DLL|UnityEngine.UIElementsModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UIElementsModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.UIElementsModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~44.XML|UnityEngine.UIElementsModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UIElementsModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.UIModule.dll" Component_="UnityEngine.UIModule.dll" FileName="UNITY~52.DLL|UnityEngine.UIModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UIModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.UIModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~45.XML|UnityEngine.UIModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UIModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.UmbraModule.dll" Component_="UnityEngine.UmbraModule.dll" FileName="UNITY~53.DLL|UnityEngine.UmbraModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UmbraModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.UmbraModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~46.XML|UnityEngine.UmbraModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UmbraModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.UNETModule.dll" Component_="UnityEngine.UNETModule.dll" FileName="UNITY~54.DLL|UnityEngine.UNETModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UNETModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.UNETModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~47.XML|UnityEngine.UNETModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UNETModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.UnityAnalyticsModule.dll" Component_="UnityEngine.UnityAnalyticsModule.dll" FileName="UNITY~55.DLL|UnityEngine.UnityAnalyticsModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UnityAnalyticsModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.UnityAnalyticsModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~48.XML|UnityEngine.UnityAnalyticsModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UnityAnalyticsModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.UnityConnectModule.dll" Component_="UnityEngine.UnityConnectModule.dll" FileName="UNITY~56.DLL|UnityEngine.UnityConnectModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UnityConnectModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.UnityConnectModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~49.XML|UnityEngine.UnityConnectModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UnityConnectModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.UnityWebRequestAssetBundleModule.dll" Component_="UnityEngine.UnityWebRequestAssetBundleModule.dll" FileName="UNITY~57.DLL|UnityEngine.UnityWebRequestAssetBundleModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.UnityWebRequestAssetBundleModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~50.XML|UnityEngine.UnityWebRequestAssetBundleModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.UnityWebRequestAudioModule.dll" Component_="UnityEngine.UnityWebRequestAudioModule.dll" FileName="UNITY~58.DLL|UnityEngine.UnityWebRequestAudioModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.UnityWebRequestAudioModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~51.XML|UnityEngine.UnityWebRequestAudioModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UnityWebRequestAudioModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.UnityWebRequestModule.dll" Component_="UnityEngine.UnityWebRequestModule.dll" FileName="UNITY~59.DLL|UnityEngine.UnityWebRequestModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UnityWebRequestModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.UnityWebRequestModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~52.XML|UnityEngine.UnityWebRequestModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UnityWebRequestModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.UnityWebRequestTextureModule.dll" Component_="UnityEngine.UnityWebRequestTextureModule.dll" FileName="UNITY~60.DLL|UnityEngine.UnityWebRequestTextureModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.UnityWebRequestTextureModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~53.XML|UnityEngine.UnityWebRequestTextureModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UnityWebRequestTextureModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.UnityWebRequestWWWModule.dll" Component_="UnityEngine.UnityWebRequestWWWModule.dll" FileName="UNITY~61.DLL|UnityEngine.UnityWebRequestWWWModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.UnityWebRequestWWWModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~54.XML|UnityEngine.UnityWebRequestWWWModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.UnityWebRequestWWWModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.VehiclesModule.dll" Component_="UnityEngine.VehiclesModule.dll" FileName="UNITY~62.DLL|UnityEngine.VehiclesModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.VehiclesModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.VehiclesModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~55.XML|UnityEngine.VehiclesModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.VehiclesModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.VideoModule.dll" Component_="UnityEngine.VideoModule.dll" FileName="UNITY~63.DLL|UnityEngine.VideoModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.VideoModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.VideoModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~56.XML|UnityEngine.VideoModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.VideoModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.VRModule.dll" Component_="UnityEngine.VRModule.dll" FileName="UNITY~64.DLL|UnityEngine.VRModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.VRModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.VRModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~57.XML|UnityEngine.VRModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.VRModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.WindModule.dll" Component_="UnityEngine.WindModule.dll" FileName="UNITY~65.DLL|UnityEngine.WindModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.WindModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.WindModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~58.XML|UnityEngine.WindModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.WindModule.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~59.XML|UnityEngine.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.xml" SelfReg="false"/>
+    <ROW File="UnityEngine.XRModule.dll" Component_="UnityEngine.XRModule.dll" FileName="UNITY~66.DLL|UnityEngine.XRModule.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.XRModule.dll" SelfReg="false"/>
+    <ROW File="UnityEngine.XRModule.xml" Component_="UnityEngine.AccessibilityModule.xml" FileName="UNITY~60.XML|UnityEngine.XRModule.xml" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityEngine.XRModule.xml" SelfReg="false"/>
+    <ROW File="UnityStore.dll" Component_="UnityStore.dll" FileName="UNITYS~1.DLL|UnityStore.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\UnityStore.dll" SelfReg="false"/>
+    <ROW File="XiaomiSupport.dll" Component_="XiaomiSupport.dll" FileName="XIAOMI~1.DLL|XiaomiSupport.dll" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Managed\XiaomiSupport.dll" SelfReg="false"/>
+    <ROW File="unitydefaultresources" Component_="unitydefaultresources" FileName="UNITYD~1|unity default resources" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Resources\unity default resources" SelfReg="false"/>
+    <ROW File="unity_builtin_extra" Component_="unitydefaultresources" FileName="UNITY_~1|unity_builtin_extra" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\Resources\unity_builtin_extra" SelfReg="false"/>
+    <ROW File="resources.assets" Component_="app.info" FileName="RESOUR~1.ASS|resources.assets" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\resources.assets" SelfReg="false"/>
+    <ROW File="resources.assets.resS" Component_="app.info" FileName="RESOUR~1.RES|resources.assets.resS" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\resources.assets.resS" SelfReg="false"/>
+    <ROW File="sharedassets0.assets" Component_="app.info" FileName="SHARED~1.ASS|sharedassets0.assets" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\sharedassets0.assets" SelfReg="false"/>
+    <ROW File="sharedassets0.assets.resS" Component_="app.info" FileName="SHARED~1.RES|sharedassets0.assets.resS" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\sharedassets0.assets.resS" SelfReg="false"/>
+    <ROW File="sharedassets1.assets" Component_="app.info" FileName="SHARED~2.ASS|sharedassets1.assets" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\sharedassets1.assets" SelfReg="false"/>
+    <ROW File="sharedassets1.assets.resS" Component_="app.info" FileName="SHARED~2.RES|sharedassets1.assets.resS" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\sharedassets1.assets.resS" SelfReg="false"/>
+    <ROW File="sharedassets2.assets" Component_="app.info" FileName="SHARED~3.ASS|sharedassets2.assets" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\sharedassets2.assets" SelfReg="false"/>
+    <ROW File="sharedassets2.assets.resS" Component_="app.info" FileName="SHARED~3.RES|sharedassets2.assets.resS" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\sharedassets2.assets.resS" SelfReg="false"/>
+    <ROW File="sharedassets2.resource" Component_="app.info" FileName="SHARED~4.RES|sharedassets2.resource" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\sharedassets2.resource" SelfReg="false"/>
+    <ROW File="sharedassets3.assets" Component_="app.info" FileName="SHARED~4.ASS|sharedassets3.assets" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\sharedassets3.assets" SelfReg="false"/>
+    <ROW File="sharedassets4.assets" Component_="app.info" FileName="SHARED~5.ASS|sharedassets4.assets" Attributes="0" SourcePath="BeaUnityProjectFinal_Data\sharedassets4.assets" SelfReg="false"/>
+    <ROW File="mono.dll" Component_="mono.dll" FileName="mono.dll" Attributes="0" SourcePath="Mono\EmbedRuntime\mono.dll" SelfReg="false"/>
+    <ROW File="MonoPosixHelper.dll" Component_="MonoPosixHelper.dll" FileName="MONOPO~1.DLL|MonoPosixHelper.dll" Attributes="0" SourcePath="Mono\EmbedRuntime\MonoPosixHelper.dll" SelfReg="false"/>
+    <ROW File="DefaultWsdlHelpGenerator.aspx" Component_="DefaultWsdlHelpGenerator.aspx" FileName="DEFAUL~1.ASP|DefaultWsdlHelpGenerator.aspx" Attributes="0" SourcePath="Mono\etc\mono\1.0\DefaultWsdlHelpGenerator.aspx" SelfReg="false"/>
+    <ROW File="machine.config" Component_="DefaultWsdlHelpGenerator.aspx" FileName="MACHIN~1.CON|machine.config" Attributes="0" SourcePath="Mono\etc\mono\1.0\machine.config" SelfReg="false"/>
+    <ROW File="Compat.browser" Component_="Compat.browser" FileName="COMPAT~1.BRO|Compat.browser" Attributes="0" SourcePath="Mono\etc\mono\2.0\Browsers\Compat.browser" SelfReg="false"/>
+    <ROW File="DefaultWsdlHelpGenerator.aspx_1" Component_="DefaultWsdlHelpGenerator.aspx_1" FileName="DEFAUL~1.ASP|DefaultWsdlHelpGenerator.aspx" Attributes="0" SourcePath="Mono\etc\mono\2.0\DefaultWsdlHelpGenerator.aspx" SelfReg="false"/>
+    <ROW File="machine.config_1" Component_="DefaultWsdlHelpGenerator.aspx_1" FileName="MACHIN~1.CON|machine.config" Attributes="0" SourcePath="Mono\etc\mono\2.0\machine.config" SelfReg="false"/>
+    <ROW File="settings.map" Component_="DefaultWsdlHelpGenerator.aspx_1" FileName="settings.map" Attributes="0" SourcePath="Mono\etc\mono\2.0\settings.map" SelfReg="false"/>
+    <ROW File="web.config" Component_="DefaultWsdlHelpGenerator.aspx_1" FileName="WEB~1.CON|web.config" Attributes="0" SourcePath="Mono\etc\mono\2.0\web.config" SelfReg="false"/>
+    <ROW File="browscap.ini" Component_="browscap.ini" FileName="browscap.ini" Attributes="0" SourcePath="Mono\etc\mono\browscap.ini" SelfReg="false"/>
+    <ROW File="config" Component_="browscap.ini" FileName="config" Attributes="0" SourcePath="Mono\etc\mono\config" SelfReg="false"/>
+    <ROW File="config.xml" Component_="config.xml" FileName="config.xml" Attributes="0" SourcePath="Mono\etc\mono\mconfig\config.xml" SelfReg="false"/>
+    <ROW File="UnityCrashHandler32.exe" Component_="UnityCrashHandler32.exe" FileName="UNITYC~1.EXE|UnityCrashHandler32.exe" Attributes="0" SourcePath="UnityCrashHandler32.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="UnityPlayer.dll" Component_="UnityPlayer.dll" FileName="UNITYP~1.DLL|UnityPlayer.dll" Attributes="0" SourcePath="UnityPlayer.dll" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFileName="Programa Estrellas" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="false"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="BeaUnityProjectFinal.exe"/>
+    <ROW Feature_="MainFeature" Component_="app.info"/>
+    <ROW Feature_="MainFeature" Component_="AssemblyCSharp.dll"/>
+    <ROW Feature_="MainFeature" Component_="ChannelPurchase.dll"/>
+    <ROW Feature_="MainFeature" Component_="Mono.Security.dll"/>
+    <ROW Feature_="MainFeature" Component_="mscorlib.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.dll"/>
+    <ROW Feature_="MainFeature" Component_="Unity.TextMeshPro.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.AccessibilityModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.AccessibilityModule.xml"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.AIModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.Analytics.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.AnimationModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.ARModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.AssetBundleModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.AudioModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.BaselibModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.ClothModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.CloudWebServicesModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.ClusterInputModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.ClusterRendererModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.CoreModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.CrashReportingModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.DirectorModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.FacebookModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.FileSystemHttpModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.GameCenterModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.GridModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.HotReloadModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.ImageConversionModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.IMGUIModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.InputModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.JSONSerializeModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.LocalizationModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.Networking.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.ParticlesLegacyModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.ParticleSystemModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.PerformanceReportingModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.Physics2DModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.PhysicsModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.ProfilerModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.ScreenCaptureModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.SharedInternalsModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.SpatialTracking.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.SpriteMaskModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.SpriteShapeModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.StandardEvents.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.StreamingModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.StyleSheetsModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.SubstanceModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.TerrainModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.TerrainPhysicsModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.TextRenderingModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.TilemapModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.Timeline.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.TimelineModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.TLSModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.UI.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.UIElementsModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.UIModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.UmbraModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.UNETModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.UnityAnalyticsModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.UnityConnectModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.UnityWebRequestAssetBundleModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.UnityWebRequestAudioModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.UnityWebRequestModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.UnityWebRequestTextureModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.UnityWebRequestWWWModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.VehiclesModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.VideoModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.VRModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.WindModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityEngine.XRModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="UnityStore.dll"/>
+    <ROW Feature_="MainFeature" Component_="XiaomiSupport.dll"/>
+    <ROW Feature_="MainFeature" Component_="unitydefaultresources"/>
+    <ROW Feature_="MainFeature" Component_="mono.dll"/>
+    <ROW Feature_="MainFeature" Component_="MonoPosixHelper.dll"/>
+    <ROW Feature_="MainFeature" Component_="DefaultWsdlHelpGenerator.aspx"/>
+    <ROW Feature_="MainFeature" Component_="Compat.browser"/>
+    <ROW Feature_="MainFeature" Component_="DefaultWsdlHelpGenerator.aspx_1"/>
+    <ROW Feature_="MainFeature" Component_="browscap.ini"/>
+    <ROW Feature_="MainFeature" Component_="config.xml"/>
+    <ROW Feature_="MainFeature" Component_="UnityCrashHandler32.exe"/>
+    <ROW Feature_="MainFeature" Component_="UnityPlayer.dll"/>
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="star_favourite_15499.exe" SourcePath="..\..\..\..\Downloads\star_favourite_15499.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT64 OR ((VersionNT &lt;&gt; 501) OR (ServicePackLevel = 3))) AND ((VersionNT &lt;&gt; 502) OR (ServicePackLevel = 2))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="BeaUnityProjectFinal" Directory_="DesktopFolder" Name="BEAUNI~1|BeaUnityProjectFinal" Component_="BeaUnityProjectFinal.exe" Target="[#BeaUnityProjectFinal.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="PC_Dir"/>
+    <ROW Shortcut="BeaUnityProjectFinal_2" Directory_="APPDIR" Name="BEAUNI~1|BeaUnityProjectFinal" Component_="BeaUnityProjectFinal.exe" Target="[#BeaUnityProjectFinal.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="PC_Dir"/>
+    <ROW Shortcut="BeaUnityProjectFinal_3" Directory_="SHORTCUTDIR" Name="BEAUNI~1|BeaUnityProjectFinal" Component_="BeaUnityProjectFinal.exe" Target="[#BeaUnityProjectFinal.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="PC_Dir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>

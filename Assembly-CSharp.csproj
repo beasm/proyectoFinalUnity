@@ -68,20 +68,28 @@
     <Compile Include="Assets\script\CanvasNivelesOscurosController.cs" />
     <Compile Include="Assets\script\FinController.cs" />
     <Compile Include="Assets\script\LuzController.cs" />
-    <Compile Include="Assets\script\old\ArmaController - copia.cs" />
-    <Compile Include="Assets\script\old\CoinController - copia.cs" />
-    <Compile Include="Assets\script\old\EnemyController - copia.cs" />
-    <Compile Include="Assets\script\old\EnemyParadoController - copia.cs" />
-    <Compile Include="Assets\script\old\GameController - copia.cs" />
-    <Compile Include="Assets\script\old\GeneradorEnemiesController - copia.cs" />
-    <Compile Include="Assets\script\old\InicioController - copia.cs" />
-    <Compile Include="Assets\script\old\LifeController - copia.cs" />
-    <Compile Include="Assets\script\old\PlataformaMovilController - copia.cs" />
     <Compile Include="Assets\script\PlayerController.cs" />
     <Compile Include="Assets\script\PlayerOscuroController.cs" />
     <Compile Include="Assets\script\PointController.cs" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\8 Bit Composers Super Pack LE (Free)\8 Bit Composers Super Pack LE.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/bea_s/AndroidStudioProjects/Unity Project Final/Unity Project Final/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
@@ -91,14 +99,14 @@
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>C:/Users/bea_s/AndroidStudioProjects/Unity Project Final/Unity Project Final/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/bea_s/AndroidStudioProjects/Unity Project Final/Unity Project Final/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
     <Reference Include="Editor">
       <HintPath>C:/Users/bea_s/AndroidStudioProjects/Unity Project Final/Unity Project Final/Library/ScriptAssemblies/Editor.dll</HintPath>
     </Reference>
     <Reference Include="XiaomiSupport">
       <HintPath>C:/Users/bea_s/AndroidStudioProjects/Unity Project Final/Unity Project Final/Library/ScriptAssemblies/XiaomiSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/bea_s/AndroidStudioProjects/Unity Project Final/Unity Project Final/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

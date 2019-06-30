@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-using UnityEngine.EventSystems;
+using Random = UnityEngine.Random;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,46 +11,60 @@ public class PlayerController : MonoBehaviour
     private bool movingPiece;
     private ArrayList pasos = new ArrayList();
 
-    //public PolygonCollider2D polygonCollider2D;
-
-    // Use this for initialization
+    /*
+     * funcion para inicializar las variable
+     */
     void Start()
     {
-        int xMax = 0;
-        int xMin = -4;
-        int yMax = 3;
-        int yMin = -3;
-
-        float positionX = UnityEngine.Random.Range(xMin, xMax);
-        float positionY = UnityEngine.Random.Range(yMin, yMax);
-        transform.position = new Vector3((positionX * sizeStep) + correctionStep, (positionY * sizeStep) + correctionStep, 0);
-        PointController.pasos = 0;
+        transform.position = new Vector3((RamdomX() * sizeStep) + correctionStep, (RamdomY() * sizeStep) + correctionStep, 0);  // posicion inicial aleatoria
+        PointController.pasos = 0; // reiniciamos el valor de los pasos
         movingPiece = false;
         alcanzadoFin = false;
-
-
     }
 
-    // Update is called once per frame
+    /*
+     * metodo para calcula un numero aleatorio X entre 0 y 4 los posibles valores
+     */
+    static int RamdomX()
+    {
+        int xMax = 0; // valor maximo de posicion
+        int xMin = -4; // valor minimo para que salga solo a la derecha de la pantalla
+        return Random.Range(xMin, xMax);
+    }
+
+    /*
+     * metodo para calcula un numero aleatorio Y entre -3 y 3 los posibles valores
+     */
+    static float RamdomY()
+    {
+        int yMax = 3; // valor maximo hacia arriba
+        int yMin = -3; // valor minimo por debajo
+        return Random.Range(yMin, yMax);
+    }
+
+    /*
+     * se actualiza por cada frame
+     */
     void Update () {
-        if (!movingPiece)
+        if (!movingPiece) // si la pieza no se esta moviendo
         {
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            if (Input.GetKeyDown(KeyCode.RightArrow)) // si se pulda la tecla de dirrecion derecha
             {
                 PasoDerecha();
             }
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            if (Input.GetKeyDown(KeyCode.LeftArrow)) // si se pulda la tecla de dirrecion izquierda
             {
                 PasoIzquierda();
             }
-            if (Input.GetKeyDown(KeyCode.UpArrow)) {
+            if (Input.GetKeyDown(KeyCode.UpArrow))  // si se pulda la tecla de dirrecion arriba 
+            {
                 PasoArriba();
             }
-            if (Input.GetKeyDown(KeyCode.DownArrow))
+            if (Input.GetKeyDown(KeyCode.DownArrow)) // si se pulda la tecla de dirrecion abajo
             {
                 PasoAbajo();
             }
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space)) // si se pulda la tecla espaciadora
             {
                 StartCoroutine("EmpezarMoviemientos"); 
             }
@@ -61,6 +72,9 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    /*
+     * anadimos al contador de pasos uno y anadimos el String derecha
+     */ 
     public void PasoDerecha()
     {
         if (!movingPiece)
@@ -70,6 +84,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /*
+     * anadimos al contador de pasos uno y anadimos el String izquierda
+     */
     public void PasoIzquierda()
     {
         if (!movingPiece)
@@ -79,6 +96,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /*
+     * anadimos al contador de pasos uno y anadimos el String arriba
+     */
     public void PasoArriba()
     {
         if (!movingPiece)
@@ -88,6 +108,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /*
+     * anadimos al contador de pasos uno y anadimos el String abajo
+     */
     public void PasoAbajo()
     {
         if (!movingPiece)
@@ -97,6 +120,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /*
+     * Empezamos el metodo para empezar los movimientos
+     */
     public void PlayMovimientos()
     {
         if (!movingPiece)
@@ -105,22 +131,25 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /*
+     * Metodo que recore la lista de pasos para realizar los movimientos
+     */ 
     IEnumerator EmpezarMoviemientos()
     {
-        movingPiece = true;
-        float pasito = sizeStep / 10;
-        foreach (string paso in pasos)
+        movingPiece = true; // activamos la variable
+        float pasito = sizeStep / 10; // divido por 10 para que el movimiento sea mas real
+        foreach (string paso in pasos) // recorremos la lista con todos los pasos
         {
-            if (!alcanzadoFin)
+            if (!alcanzadoFin) // si no se ha alcanzado el fin
             {
-                switch (paso)
+                switch (paso) // seletor de los pasos
                 {
                 case "derecha":
-                    for (int i = 0; i < 10; i++)
+                    for (int i = 0; i < 10; i++) // recorremos los 10 pasitos
                     {
-                        transform.position += new Vector3(pasito, 0, 0);
-                        yield return new WaitForSeconds(0.01f);
-                    }
+                        transform.position += new Vector3(pasito, 0, 0); // cambiamos la posicion
+                        yield return new WaitForSeconds(0.01f); // esperamos 0.01f
+                        }
                     break;
 
                 case "izquierda":
@@ -147,40 +176,50 @@ public class PlayerController : MonoBehaviour
                     }
                     break;
                 }
-                PointController.pasos--;
-                yield return new WaitForSeconds(0.5f);
+                PointController.pasos--; // quitamos un paso
+                yield return new WaitForSeconds(0.5f); // espemos 0.5f
             }
         }
 
-        if (alcanzadoFin)
+        if (alcanzadoFin) // si se ha alzado el fin
         {
-            PointController.pasos = 0;
-            SetNivelesSuperados(GetNivelesSuperados() + 1);
-            yield return new WaitForSeconds(1f);
-            SceneManager.LoadScene("NivelesAleatorios");
-        } else
+            PointController.pasos = 0; // reiniciamos el valor
+            SetNivelesSuperados(GetNivelesSuperados() + 1); // anadimos un nivel mas
+            yield return new WaitForSeconds(1f); // esperamos 1f
+            SceneManager.LoadScene("NivelesAleatorios"); // Cargamos la pantalla anterior
+        }
+        else // si no hemos llegado al fin
         {
-            //TODO: O volver al origen
-            pasos = new ArrayList();
-            movingPiece = false;
+            pasos = new ArrayList(); // vaciamos la lista
+            movingPiece = false; // desactivamos la variable
         }
     }
 
+    /*
+     * Metodo para obtener los niveles superados
+     */
     private int GetNivelesSuperados()
     {
         return PlayerPrefs.GetInt("nivel1", 0);
     }
 
+    /*
+     * Metodo para cambiar los niveles superados
+     */
     private void SetNivelesSuperados(int bonus)
     {
         PlayerPrefs.SetInt("nivel1", bonus);
     }
 
+
+    /*
+     * Evento de colision con el final
+     */ 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Finish" && !alcanzadoFin)
         {
-            alcanzadoFin = true;
+            alcanzadoFin = true; // activamos la variable
         }
 
     }

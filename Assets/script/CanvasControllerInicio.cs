@@ -5,30 +5,25 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class CanvasControllerInicio : MonoBehaviour {
-    private int nivelesSuperados;
-    private GameObject[] generadorEnemigos;
-
-    void Start()
-    {
-
-    }
-
-
+    /**
+    * vamos a la pantalla de niveles basicos
+    */
     public void NivelesAleatorios()
     {
         SceneManager.LoadScene("NivelesAleatorios");
     }
 
+    /**
+    * vamos a la pantalla de niveles oscuros
+    */
     public void NivelesAleatoriosOscuros()
     {
         SceneManager.LoadScene("NivelesAleatoriosOscuros");
     }
 
-    public void NivelesObtaculos()
-    {
-        SceneManager.LoadScene("NivelesObtaculos");
-    }
-
+    /**
+    * Salimos de la aplicacion o minimizamos la pantalla
+    */
     public void Close()
     {
         Application.Quit();
